@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passport Chip Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav button {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+
+    nav button.active {
+      background: #0056b3;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid #007bff;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 18px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+    }
+
+    .info {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      border-left: 4px solid #007bff;
+      text-align: left;
+    }
+
+    .info p {
+      margin: 8px 0;
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info p:last-child {
+      border-bottom: none;
+    }
+
+    .info strong {
+      color: #333;
+      width: 120px;
+      display: inline-block;
+    }
+
+    .info span {
+      font-weight: bold;
+      color: #333;
+      width: 120px;
+      display: inline-block;
+    }
+
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #007bff, transparent);
+      margin: 25px 0;
+      border: none;
+    }
+
+    .next-btn {
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 20px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-btn:hover {
+      background: #218838;
+    }
+
+    .info pre {
+     font-size: 18px;   
+     font-weight: bold;
+     letter-spacing: 2px;
+     line-height: 1.5;
+     white-space: pre-wrap;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Passport Chip Data</h1>
+      <nav>
+        <button class="active">DATA</button>
+        <button>SECURITY</button>
+      </nav>
+    </header>
+
+    <section class="profile">
+      <img src="foto id.jpg" alt="Official passport photo of ALMEERA HABIBAH FARIS with neutral expression and professional appearance" class="photo" />
+      <h2>Personal Information</h2>
+      <div class="info">
+        <p><strong>Full Name:</strong>DEVI YE</p>
+        <p><strong>Sex:</strong>P</p>
+        <p><strong>Date of Birth:</strong>24 OCT 1993</p>
+        <p><strong>Nationality:</strong>INDONESIA</p>
+        <p><strong>Place of Birth:</strong>JAKARTA PUSAT</p>
+      </div>
+    </section>
+
+    <!-- Garis pemisah setelah Place of Birth -->
+    <hr class="divider">
+
+    <div class="section-title">Passport Information</div>
+    <div class="info">
+      <p><span>Passport No:</span>X964931</p>
+      <p><span>Country On:</span>IDN</p>
+      <p><span>Date of Issue:</span>10 MAR 2025</p>
+      <p><span>Date of Expiry:</span>10 MAR 2035</p>
+      <p><span>National ID No:</span>1A11JD9361ABPV</p>
+    </div>
+
+    <div class="section-title">MRZ Data</div>
+    <div class="info">
+       <pre>
+P&lt;IDNYE&lt;&lt;DEVI&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+X964931&lt;&lt;9IDN9310243M35031003171012410100120
+        </pre>
+    </div>
+
+    <button class="next-btn">Next</button>
+  </div>
+</body>
+</html>
+
